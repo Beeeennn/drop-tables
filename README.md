@@ -1,9 +1,2 @@
 # drop-tables
-Peak AI hackathon data science project
-
-We need to write about:
-What the project does.
-Why the project is useful.
-How users can get started with the project.
-Where users can get help with your project.
-Who maintains and contributes to the project.
+We coded this using a _____ method and by preparing the data beforehand. We used the train test model with a split of 80/20, meaning 80% of the data is used to train the model and 20% is used to test how acurate it is.
