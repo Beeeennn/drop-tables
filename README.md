@@ -6,7 +6,7 @@ This project anaylises the sales and profit from a group of data by grouping the
 Task 2:
 It was inteneded for the code to chunck and normalise the data based on whether it was on promotion or off promotion. It was then to be catagorised by date before being plotted on a graph so the "data before, during, and after promotions" could be easily seen and compared. All to try help optimise and measure the impact of marketing methods.
 
-There is also data forcasting to predict which products will be in higher demand in the future. We coded this using a linear regression method and by preparing the data beforehand. We used a train/test split of 80/20
+There is also data forcasting to predict which products will be in higher demand in the future. We took the mean.
 
 This project is useful because it will allow a bussiness to see which products are the most profitable, how effect marketing campains are, purcashing patterns and a prediction for which products will be in demand in the future.
 
