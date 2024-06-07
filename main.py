@@ -1,4 +1,5 @@
 import openpyxl
+import matplotlib.pyplot as plt
 
 # Define variable to load the dataframe
 dataframe = openpyxl.load_workbook("Superstore Dataset.xlsx")
@@ -84,3 +85,27 @@ print("\n")
 
 print ("the sub catergory with the highest total profit is", SubCatergories[SubProfits.index(max(SubProfits))], "with" , SubProfits[SubProfits.index(max(SubProfits))], "total profit made")
 print ("the sub catergory with the highest average profit is", SubCatergories[SubAvrageProfits.index(max(SubAvrageProfits))], "with" , SubAvrageProfits[SubAvrageProfits.index(max(SubAvrageProfits))], "average profit per usit sold")
+
+# drawing graph to show average profit of categories and sub categories
+
+# declaring the x and y axis
+x = []
+y = []
+
+# adding categories to the graph
+for i in range (len(Catergories)):
+	x.append(Catergories[i])
+	y.append(AvrageProfits[i])
+
+# adding subcategories to the graph
+for i in range (len(SubCatergories)):
+	x.append(SubCatergories[i])
+	y.append(SubAvrageProfits[i])
+
+# colouring the categories differently to sub categories
+barlist = plt.bar(x,y)
+for i in range (len(Catergories)):
+	barlist[i].set_color('red')
+
+#show the graph
+plt.show()
